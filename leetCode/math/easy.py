@@ -130,3 +130,62 @@ print(fun(125)) """
      n+=1
  return count 
 print(fun(7)) """
+
+
+
+#11 count the digit that divide a number
+""" def fun(num):
+ count=0
+ for val in str(num):
+   val=int(val)
+   if val !=0 and num%val==0:
+      count+=1
+ print(count)
+print(fun(7)) """
+
+
+
+# 12 Number of steps to reduce a number to zero
+""" def fun(num):
+  count=0
+  while num>0:
+    if num%2==0:
+      num=num//2
+      count+=1
+    else:
+      num-=1
+      count+=1
+  print(count)
+print(fun(14))    """
+
+
+
+# 13 sum multiples
+
+""" def fun(n):
+  array=[]
+  while n>0:
+    if (n%3==0) or (n%5==0) or (n%7==0):
+      array.append(n)
+    n-=1
+  print(sum(array))
+print(fun(10)) """
+
+""" Input: nums = [1,15,6,3]
+Output: 9
+Explanation: 
+The element sum of nums is 1 + 15 + 6 + 3 = 25.
+The digit sum of nums is 1 + 1 + 5 + 6 + 3 = 16.
+The absolute difference between the element sum and digit sum is |25 - 16| = 9.  """
+
+
+
+#14 difference between element sum or digit sum of an array 
+""" def fun(arr):
+  x=0
+  m=sum(arr)
+  for a in arr:
+    for i in str(a):
+      x+=int(i)
+  print(m-x)
+print(fun([1,15,6,3])) """
