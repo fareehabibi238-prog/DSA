@@ -1,5 +1,5 @@
 def fun(nums,target):
-     seen = {}  # value -> index
+     seen = {} 
      for i, num in enumerate(nums):
         complement = target - num
         if complement in seen:
